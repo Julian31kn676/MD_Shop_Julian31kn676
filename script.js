@@ -2,12 +2,18 @@ async function getProducts(){
     let response = await fetch("items.json")
     let products = await response.json()
     return products
-}
+}  
 async function getProductsWomen(){
     let response = await fetch("anim.json")
     let products = await response.json()
     return products
 }
+async function getProductsJC(){
+    let response = await fetch("JC.json")
+    let products = await response.json()
+    return products
+}
+
 
 function getCardHTML (product){
     let productData = JSON.stringify(product)
@@ -43,6 +49,40 @@ getProducts().then(function(products){
 
 getProductsWomen().then(function(products){
     let productsList = document.querySelector('.items_women')
+    if (productsList){
+       products.forEach(product =>{
+        productsList.innerHTML += getCardHTML(product)
+       })
+    }
+    let buyButtons = document.querySelectorAll('.buy')
+    if ( buyButtons ){
+        buyButtons.forEach(button =>{
+            button.addEventListener('click', buyitem) 
+        })
+            
+        }
+    }
+)
+
+getProductsJC().then(function(products){
+    let productsList = document.querySelector('.items_JC')
+    if (productsList){
+       products.forEach(product =>{
+        productsList.innerHTML += getCardHTML(product)
+       })
+    }
+    let buyButtons = document.querySelectorAll('.buy')
+    if ( buyButtons ){
+        buyButtons.forEach(button =>{
+            button.addEventListener('click', buyitem) 
+        })
+            
+        }
+    }
+)
+
+getProductsWomen().then(function(products){
+    let productsList = document.querySelector('.')
     if (productsList){
        products.forEach(product =>{
         productsList.innerHTML += getCardHTML(product)
