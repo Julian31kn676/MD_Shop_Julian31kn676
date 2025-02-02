@@ -1,4 +1,4 @@
-async function getProducts(){
+async function getProducts(){ 
     let response = await fetch("items.json")
     let products = await response.json()
     return products
