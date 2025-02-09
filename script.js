@@ -2,7 +2,7 @@ async function getProducts(){
     let response = await fetch("items.json")
     let products = await response.json()
     return products
-}    
+}     
 async function getProductsWomen(){
     let response = await fetch("anim.json")
     let products = await response.json()

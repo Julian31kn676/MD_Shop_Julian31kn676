@@ -2,7 +2,7 @@ body{
     margin: 0;
     font-family: 'Inter'; 
 }  
-header{
+header{ 
     height: 78px;
     display: flex;
     align-items: center;
@@ -224,33 +224,33 @@ html{
 .Tik_Tok{
     position: absolute;
     margin-top: -161px;
-    margin-left: 195vh;
+    margin-left: 184vh;
 }
 .you{
     position: absolute;
     margin-top: -101px;
-    margin-left: 190vh;
+    margin-left: 180vh;
 }
 .gps{
     position: absolute;
     margin-top: -51px;
-    margin-left: 149vh;
+    margin-left: 142vh;
 }
 
 .m_u{
     position: absolute;
     margin-top: -3100px;
-    margin-left: 162.5vh;
+    margin-left: 154vh;
 }
 
 .m_n{
     position: absolute;
     margin-top: -2040px;
-    margin-left: -21.5vh;
+    margin-left: -20.5vh;
 }
 
 .m_v{
     position: absolute;
     margin-top: -900px;
-    margin-left: 194.5vh;
+    margin-left: 184.4vh;
 }
